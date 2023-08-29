@@ -19,7 +19,7 @@ elseif(strpos($url, '/wp/v2/types') !== false)
 }
 else 
 {
-    echo "URL is invalid";
+    echo "This URL is invalid";
 }
     
  // Function to recursively iterate over the data array
