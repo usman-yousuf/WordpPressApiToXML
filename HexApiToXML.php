@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://horlix.com/wp-json/wp/v2/pages";
+$url = "http://example.com/wp-json/wp/v2/pages";
 
 if(strpos($url, '/wp/v2/pages') !== false || strpos($url, '/wp/v2/posts') !== false) 
 {
@@ -22,7 +22,7 @@ else
     echo "URL is invalid";
 }
     
- // Function to recursively iterate over the array and convert it into XML
+ // Function to recursively iterate over the data array
  function arrayToXml($data, &$xml) {
     foreach($data as $key => $value) {
       // If value is an array, then recursively call the function
@@ -85,7 +85,7 @@ else
   }
   
 
-// Function to create XML
+// Function to generate XML
 function XmlGenerator($data)
 {
     $response = json_decode($data);
