@@ -3,7 +3,7 @@
 $post_id = 16427;
 
 // Build the API URL
-$url = "https://horlix.com/wp-json/wp/v2/posts/{$post_id}?_fields=meta";
+$url = "https://example.com/wp-json/wp/v2/posts/{$post_id}?_fields=meta";
 var_dump($url);
 // Fetch the data using cURL
 $ch = curl_init();
